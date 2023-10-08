@@ -1,0 +1,81 @@
+# .gitignore
+
+# JCStress
+jcstress-results*
+results
+
+# credentials
+project/.gnupg/local*
+
+# sbt
+target
+project/target
+.history
+.bsp
+.bloop
+.metals
+metals.sbt
+
+# Java
+*.class
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+.dbeaver*
+.directory
+local
+
+# Python
+venv/
+
+# Logs
+~*
+*.log
+**/*.log
+log/
+logs/
+*.lock
+*.orig
+
+# Temporary files
+*~
+*.bak
+*.old
+*.swp
+*.tmp
+nohup.out
+tmp
+*.md.html
+
+# vim
+.*.sw[a-z]
+
+# IntelliJ
+.idea
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.cache
+.classpath
+.project
+.scala_dependencies
+*.sc
+**/.settings/org.eclipse.core.resources.prefs
+**/.settings/org.eclipse.jdt.apt.core.prefs
+**/.settings/org.eclipse.m2e.core.prefs
+
+# Ensime
+.ensime
+.ensime_cache/
+
+# Mac OS X
+._*
+.DS_Store
+
+# Windows
+Desktop.ini
+Thumbs.db
+
+*.flattened-pom.xml
