@@ -311,10 +311,13 @@ public class LitmusTests {
         }
     }
 
+    /**
+     * Independent Reads of Independent Writes (IRIW) test with plain variables.
+     */
     @JCStressTest
     @Outcome(id = "1, 0, 1, 0", expect = ACCEPTABLE_INTERESTING, desc = "Thread3 and thread4 see the writes in different order.")
     @Outcome(id = "0, 1, 0, 1", expect = ACCEPTABLE, desc = "First read operations, then writes, then second read operations.")
-    @Outcome(                   expect = ACCEPTABLE, desc = "Rest are acceptable.")
+    @Outcome(                   expect = ACCEPTABLE, desc = "Rest is acceptable.")
     @State
     public static class IRIWPlain {
         private int x;
@@ -343,10 +346,13 @@ public class LitmusTests {
         }
     }
 
+    /**
+     * Independent Reads of Independent Writes (IRIW) test with volatile variables.
+     */
     @JCStressTest
     @Outcome(id = "1, 0, 1, 0", expect = FORBIDDEN, desc = "Thread3 and thread4 see the writes in different order.")
     @Outcome(id = "0, 1, 0, 1", expect = ACCEPTABLE, desc = "First read operations, then writes, then second read operations.")
-    @Outcome(                   expect = ACCEPTABLE, desc = "Rest are acceptable.")
+    @Outcome(                   expect = ACCEPTABLE, desc = "Rest is acceptable.")
     @State
     public static class IRIWVolatile {
         private volatile int x;

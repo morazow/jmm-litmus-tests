@@ -16,7 +16,7 @@ import org.openjdk.jcstress.infra.results.II_Result;
  * Run with:
  * java -jar target/jmm-litmus-tests-1.0.0-assembly.jar -t AtomicitySanityChecks[.SubtestName] -v
  */
-public class AtomicitySanityChecks {
+public class AtomicitySanityTests {
 
     /**
      * Plain variable increments are not atomic.
