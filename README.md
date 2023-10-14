@@ -8,7 +8,7 @@ This repository contains JCStress tests for [Understanding Java Memory Model (JM
 
 ## Atomicity Tests
 
-[`AtomicityTest.java`](src/main/java/com/morazow/jmm/AtomicityTest.java) to check Java `atomicity` mechanisms.
+[`AtomicitySanityTests.java`](src/main/java/com/morazow/jmm/AtomicitySanityTests.java) to check Java `atomicity` mechanisms.
 
 - Plain variables
 - Volatile variables
