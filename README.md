@@ -4,7 +4,7 @@
 
 Java Memory Model Litmus Tests.
 
-This repository contains JCStress tests for `Understanding Java Memory Model (JMM)` blog post.
+This repository contains JCStress tests for [Understanding Java Memory Model (JMM)](https://blog.morazow.com/2023/10/13/java-memory-model/) blog post.
 
 ## Atomicity Tests
 
